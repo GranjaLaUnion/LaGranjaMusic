@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: #050101;
-            color: #333;
+            color: #fff; /* Changed to white for better visibility against the dark background */
         }
         .cover-image {
             width: 100%;
@@ -22,22 +22,28 @@
             margin: auto;
             padding: 20px;
         }
-        h1 {
+        h1, h2 {
             color: #006400;
             text-align: center;
             padding: 20px 0;
         }
-        .song-list {
+        .song-list, .video-list {
             list-style: none;
             padding: 0;
         }
-        .song-list li {
+        .song-list li, .video-list li {
             margin-bottom: 20px;
+            display: flex;
+            align-items: center;
         }
-        .song-list iframe {
+        .song-list iframe, .video-list iframe {
             border: none;
             width: 100%;
             height: 150px;
+        }
+        .index {
+            margin-right: 10px;
+            color: #FFD700; /* Gold color for the index numbers */
         }
     </style>
 </head>
@@ -45,66 +51,47 @@
     <img src="portada.png" alt="La Granja Music Cover" class="cover-image">
     <div class="container">
         <h1>La Granja Music</h1>
+        <h2>Songs</h2>
         <ul class="song-list">
-            <li>
-                <iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34359128&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe>
-            </li>
-            <li>
-                <iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34359122&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe>
-            </li>
-		<li>
-                <iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34359183&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe>
-            </li>
+            <!-- Each song item now includes a span for the index number -->
+            <!-- Example for song items -->
 
 
-            <li>
-                <iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34359118&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe>
-            </li>
-            <li>
-                <iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34359119&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe>
-            </li>
 
-  <li>
-                <iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34361301&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe>
-            </li>
+            <li><span class="index">1.</span><iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34359128&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe></li>
+           <li><span class="index">2.</span><iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34359122&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe></li>
+           <li><span class="index">3.</span><iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34359183&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe></li>
+           <li><span class="index">4.</span><iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34359118&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe></li>
+           <li><span class="index">5.</span><iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34359119&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe></li>
+           <li><span class="index">6.</span><iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34361301&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe></li>
+           <li><span class="index">7.</span><iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34361299&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe></li>
+           <li><span class="index">8.</span><iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34365875&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe></li>
+           <li><span class="index">9.</span><iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34365878&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe></li>
+           <li><span class="index">10.</span><iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34365872&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe></li>
+           <li><span class="index">11.</span><iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34371402&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe></li>
+           <li><span class="index">12.</span><iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34373953&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe></li>
+           <li><span class="index">13.</span><iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34373956&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe></li>
+           <li><span class="index">14.</span><iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34391741&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe></li>
+           <li><span class="index">15.</span><iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34391740&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe></li>
 
-  <li>
-                <iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34361299&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe>
-            </li>
-
-
- <li>
-                <iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34365875&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe>
-            </li>
-
- <li>
-                <iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34365878&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe>
-            </li>
-
- <li>
-                <iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34365872&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe>
-            </li>
-
- <li>
-                <iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34371402&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe>
-            </li>
-
- <li>
-                <iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34373953&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe>
-            </li>
-
- <li>
-                <iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34373956&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe>
-            </li>
-
- <li>
-                <iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34391741&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe>
-            </li>
- <li>
-                <iframe src="https://www.reverbnation.com/widget_code/html_widget/artist_8757228?widget_id=55&pwc[song_ids]=34391740&context_type=song&spoid=artist_8757228&pwc[size]=small"></iframe>
-            </li>
+          
 
 
+
+            <!-- Add more songs with their respective index numbers -->
+        </ul>
+        
+        <h2>Videos</h2>
+        <ul class="video-list">
+            <!-- Each video item also includes a span for the index number -->
+            <!-- Example for video items -->
+            <li><span class="index">1.</span><iframe width="560" height="315" src="https://www.youtube.com/embed/LQqA9QdHXIs?si=45D8rseAeBMxyy07" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+	    <li><span class="index">2.</span><iframe width="560" height="315" src="https://www.youtube.com/embed/k7H2WhBgOmA?si=2N0hU2ajEnZjicWj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+    <li><span class="index">3.</span><iframe width="560" height="315" src="https://www.youtube.com/embed/LQqA9QdHXIs?si=mR2JyPUQeQOFQZI2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+    <li><span class="index">4.</span><iframe width="560" height="315" src="https://www.youtube.com/embed/-XQpJ2wy0fg?si=pKWj0SiUl0LzjMN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+            
+
+<!-- Add more videos with their respective index numbers -->
         </ul>
     </div>
 </body>
